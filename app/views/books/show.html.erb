@@ -1,0 +1,27 @@
+<html>
+  <body>
+    <table>
+      <thead>
+        <th>
+          <th class="box_show">タイトル</th>
+          <th class="box_show"><%= @book.title %></th>
+        </th>
+      </thead>
+      
+      <thead>
+        <th>
+          <th class="box_show">本文</th>
+          <th class="box_how"><%= @book.body %></th>
+        </th>
+      </thead>
+      
+      <tbody>
+        <tr>
+          <td class="button_show"><%= link_to"edit", edit_book_path(@book.id) %></td>
+          <td class-"button_show"><%= link_to "back", "https://f68d3cf7304f4204b0732f8f1087272b.vfs.cloud9.ap-northeast-1.amazonaws.com/books" %></td>
+        </tr>
+      </tbody>
+    </table>
+    <%= flash[:notice] %></
+  </body>
+</html>
