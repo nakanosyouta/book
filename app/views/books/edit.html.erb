@@ -26,11 +26,12 @@
       <tbody>
         <tr>
           <td class="button"><%= link_to "show", book_path(@book.id) %></th>
-          <td class="button"><%= link_to "back", "https://f68d3cf7304f4204b0732f8f1087272b.vfs.cloud9.ap-northeast-1.amazonaws.com/books"%></th>
+          <td class="button"><%= link_to "back", index_book_path %></th>
         </tr>
       </tbody>
     </table>
     <% end %>
+    <p class="message"><%= flash[:notice] %></p>
   </body>
 </html>
     
